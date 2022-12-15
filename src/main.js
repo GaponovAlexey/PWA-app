@@ -24,11 +24,7 @@ const LoadPost = async () => {
 };
 
 const toCard = (post) => {
-  return `
-  <div class='card'>
-    <div class="card-title">
-      ${post.id}
-      ${post.title}
-    </div>
-  </div>`;
+  return `<div class="cards">
+      ${post.id} ${post.title}
+    </div>`;
 };
