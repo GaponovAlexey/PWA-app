@@ -33,6 +33,6 @@ const LoadPost = async () => {
 
 const toCard = (post) => {
   return `<div class="cards">
-      ${post.id} ${post.title}
+    ${post.id} ${post.title}
     </div>`;
 };
