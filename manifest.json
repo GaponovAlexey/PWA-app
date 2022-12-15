@@ -1,0 +1,9 @@
+{
+  "name": "PWA Course AP",
+  "short_name": "WM PWA",
+  "theme_color": "#2196f3",
+  "background_color": "#3a97e1",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "."
+}

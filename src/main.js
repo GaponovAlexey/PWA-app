@@ -1,5 +1,17 @@
 import { setupCounter } from "./counter.js";
 
+window.addEventListener("load", async () => {
+  if ("serviceWorker" in navigator) {
+    try {
+      const reg = await navigator.serviceWorker.register("../sw.js");
+    } catch (e) {
+      console.log("worker", e);
+    }
+  }
+
+  await LoadPost();
+});
+
 ///html
 document.querySelector("#app").innerHTML = `
   <div>
@@ -10,10 +22,6 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 setupCounter();
-
-window.addEventListener("load", async () => {
-  await LoadPost();
-});
 
 const LoadPost = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/todos");
