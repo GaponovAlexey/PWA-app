@@ -9,6 +9,13 @@
   text-rendering: optimizeLegibility;
 }
 
+main {
+  margin: 0 center;
+  background: "red";
+  text-color: "blue";
+  font-size: 24px;
+}
+
 button {
   padding: 20px;
   color: rgba(255, 255, 4, 0.87);

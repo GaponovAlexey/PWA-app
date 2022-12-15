@@ -8,7 +8,8 @@
 //   setCounter(0)
 // }
 
-export const setupCounter = (el) => {
+export const setupCounter = () => {
+  const el = document.querySelector('#counter')
   let c = 0;
   const set = (co) => {
     c = co;
